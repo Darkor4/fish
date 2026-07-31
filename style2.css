@@ -1,0 +1,11 @@
+body {
+background-image: repeating-linear-gradient(45deg, #1C3447 40px, #00090F 60px);
+font-family: "Lucida Console", monospace;
+}
+header, main, footer {
+background-color:  #001A2E;
+color: #25445E;
+}
+a, h1, h3 {
+color: #2E5675;
+}
