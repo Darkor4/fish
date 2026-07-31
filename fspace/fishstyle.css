@@ -1,0 +1,134 @@
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+li.in {
+    background-image: linear-gradient(rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.5)) !important;
+    padding: 7px;
+    border-radius: 10px;
+}
+li.ni img {
+    padding: 5px;
+    margin: 0px;
+    background-image: url(spacee.jpg);
+}
+li img:hover {
+    border: 4px solid steelblue;
+    padding: 1px
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 21px;
+    margin: 0px;
+}
+nav {
+    text-align: center;
+    background-color: midnightblue;
+    padding: 2px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+
+}
+footer {
+    background-color: midnightblue;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+nav a:hover, footer a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+footer a {
+    color: white;
+}
+main {
+    padding: 20px;
+    background-image: repeating-linear-gradient(135deg, white 100px, gainsboro 200px);
+}
+header {
+    background-image: linear-gradient(90deg, rgb(99, 96, 255), rgb(0, 0, 0, 0.0));
+    /* god I love W3schools ^ */
+    padding: 5px;
+    color: white;
+    margin-top: 60px;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+a img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: repeating-linear-gradient(135deg, black 100px, #1f1f1f 200px);
+    min-width: 750px;
+    max-width: 3000px;
+}
+@media (max-width: 1200px) {
+    nav ul {
+        font-size: 10px;
+    }
+}
+@media (max-width: 800px) {
+    nav ul {
+        font-size: 13px;
+        margin-right: 8px;
+    }
+    nav li {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+/* figure this out https://fonts.google.com/selection/embed */
+nav, footer {
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"ELSH" 0;
+    color: white;
+}
+main *, header * {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.comment {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+section {
+    border: 3px solid midnightblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(99, 96, 255, 0.5);
+}
+em {
+    font-style: italic;
+}
+em strong {
+    font-style: italic;
+    font-weight: bolder;
+    color: midnightblue;
+}
+strong {
+    font-weight: bolder;
+}
+@media (min-width: 3000px) {
+    body {
+        margin: auto;
+    }
+}

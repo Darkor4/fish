@@ -1,0 +1,7 @@
+body {
+background-image: repeating-linear-gradient(45deg, darkslategray 60px, black 40px);
+}
+header, main, footer {
+background-color:  midnightblue;
+color: gainsboro;
+}

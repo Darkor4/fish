@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <title>list</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-image: repeating-linear-gradient(135deg, steelblue 20px, deepskyblue 30px);
+            }
+
+            header {
+                color: lightgoldenrodyellow;
+            }
+
+            div {
+                border: 10px ridge lightgoldenrodyellow;
+                margin: 20px;
+                padding: 15px;
+                display: grid;
+                grid-template-columns: 3fr, 1fr;
+            }
+            div:has(img) {
+                grid-column: 2/3;
+            }
+            p {
+                grid-row: 1/2;
+            }
+            .bob {
+                background-color: white;
+            }
+            .penguin {
+                background-color: skyblue;
+                color: gold;
+            }
+            .stapler {
+                background-image: repeating-radial-gradient(circle at right, firebrick 20px, maroon 30px);
+                color: gold;
+                border: 20px ridge gold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>headshots (X5)</h1>
+        </header>
+
+        <main>
+            <dl>
+                <div class="bob">
+                    <dt>Bob Bobberson III</dt>
+                    <dd>He calls... <a href="../homework/bob.html" target="_blank">oh god...</a></dd>
+                    <dd><img src="squarebob.jpeg" alt="guy"></dd>
+                </div>
+
+                <div class="penguin">
+                    <dt>Waddles</dt>
+                    <dd>Mascot of OCF, absolute savior (<strong><em>DO NOT</em></strong> touch the printers)</dd>
+                    <dd><img src="squarewaddles.jpeg" alt="Waddles"></dd>
+                </div>
+
+                <div class="penguin">
+                    <dt>Tux</dt>
+                    <dd>Mascot of Linux, absolute savior</dd>
+                    <dd><img src="squaretux.jpeg" alt="Tux the penguin"></dd>
+                </div>
+
+                <div class="penguin">
+                    <dt>Screaming Angry Penguin</dt>
+                    <dd>Keeps the printers safely untouched, absolute savior</dd>
+                    <dd><img src="squarescream.jpg" alt="screaming angry penguin"></dd>
+                </div>
+
+                <div class="stapler">
+                    <dt>HOLY ROYAL STAPLER</dt>
+                    <dd>ONLY STAPLER IN OFFICE, PROTECT AT ALL COSTS</dd>
+                    <dd><img src="squarestapler.jpg" alt="s t a p l e r"></dd>
+                </div>
+            </dl>
+        </main>
+
+        <footer>
+            <a href="https://atdpsites.berkeley.edu/validate/" target="_blank">Validate</a>
+        </footer>
+    </body>
+
+</html>

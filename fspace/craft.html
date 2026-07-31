@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <title>FSpace Spacecraft (Project)</title>
+        <link rel="icon" type="image/x-icon" href="fishspace.png">
+
+        <meta charset="utf-8">
+        <link href="fishstyle.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <style>
+            section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            section table {
+                grid-column: 1/2;
+            }
+            table th {
+                
+                padding-right: 10px;
+                margin-right: 0px;
+            }
+            table td {
+                border-left: 2px solid midnightblue;
+                padding-left: 10px;
+                margin-left: 0px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            section p:first-child {
+                grid-column: 2/3;
+                font-size: 3em;
+            }
+            header {
+                background-image: linear-gradient(90deg, rgb(99, 96, 255), rgb(0, 0, 0, 0.0)), url(satellitebetter.png), url(spaceeee.webp);
+                background-repeat: no-repeat, no-repeat, repeat ;
+                background-position: center, right, center;
+                background-size: cover, 30%, 40%;
+            }
+            model-viewer {
+                margin: 0;
+                padding: 0;
+            }
+            dt {
+                margin-top: 10px;
+            }
+            dt span {
+                color: aliceblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="fishspace.png" alt="home" width="51" height="48"></a></li>
+                <li class="in"><a href="craft.html">SpaceCraft</a></li>
+                <li><a href="policy.html">Policies & Billing</a></li>
+                <li><a href="allies.html">Allies & Competition</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="references.html">Citations</a></li>
+            </ul>
+        </nav>
+
+        <header title="Image: Orca deploying satellites">
+            <h1>Spacecraft</h1>
+            <p><em>"They go to space (hopefully)"</em></p>
+        </header>
+
+        <main>
+            <p>We make reusable rockets</p>
+
+            <h2>Our Spacecraft (Primary)</h2>
+            <section class="craft">
+                <h3>Orca Multirole Spacecraft</h3>
+                <p><em>"High specific impulse"</em></p>
+                <p>The Orca Multirole Spacecraft is a reusable spacecraft designed for carrying astronauts and cargo to space. It can be used for a variety of missions, including satellite deployment, space station assembly, space station resupply, and deep space exploration.</p>
+                <table>
+                    <tr>    <th>Height</th>    <td>10 m</td>   </tr>
+                    <tr>    <th>Diameter</th>    <td>4 m</td>   </tr>
+                    <tr>    <th>Dry Mass</th>    <td>20,000 kg</td>   </tr>
+                    <tr>    <th>Wet Mass</th>    <td>30,000 kg</td>   </tr>
+                    <tr>    <th>Cargo Capacity</th>    <td>10,000 kg</td>   </tr>
+                    <tr>    <th>Thrust</th>    <td>(N/A) N</td>   </tr>
+                    <tr>    <th>Efficiency</th>    <td>(N/A) Isp</td>   </tr>
+                </table>
+                <section style="grid-column: 1/2; display: block;">
+                    <h4>Variants:</h4>
+                    <dl>
+                        <dt>people orca</dt>
+                        <dd>This one can fit a bunch of people and bring them up and down</dd>
+
+                        <dt>Cargo orca</dt>
+                        <dd>Has a fat cargo bay that can store stacks of satellites, probes, and station modules</dd>
+
+                        <dt>SatCargo orca</dt>
+                        <dd>Cargo orca optimized for satellites</dd>
+
+                        <dt><span>Exo</span>People orca</dt>
+                        <dd>People orca optimized for landing on exoplanets</dd>
+
+                        <dt><span>Exo</span>Cargo orca</dt>
+                        <dd>Cargo orca optimized for bringing cargo to exoplanet surfaces</dd>
+
+                        <dt><span>Exo</span>Builder orca</dt>
+                        <dd>orca made for atuomatically processing materials and using them to build surface bases on exoplanets</dd>
+                    </dl>
+                </section>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="orcasmol.glb"
+                        alt="3D orca model"
+                        camera-controls
+                        style="width: 100%; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>Whale Heavy Lifter</h3>
+                <p><em>"The business end"</em></p>
+                <p>The Whale Heavy Lifter is a large reusable atmospheric rocket designed for carrying up the Orca Multirole Spacecraft (all variants) to space.</p>
+                <table>
+                    <tr>    <th>Height</th>    <td>70 m</td>   </tr>
+                    <tr>    <th>Diameter</th>    <td>5 m</td>   </tr>
+                    <tr>    <th>Dry Mass</th>    <td>1,200,000 kg</td>   </tr>
+                    <tr>    <th>Wet Mass</th>    <td>1,800,000 kg</td>   </tr>
+                    <tr>    <th>Payload</th>    <td>100,000 kg</td>   </tr>
+                    <tr>    <th>Thrust</th>    <td>7,600,000 kg</td>   </tr>
+                    <tr>    <th>Efficiency</th>    <td>(N/A) Isp</td>   </tr>
+                </table>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="whalenew.glb"
+                        alt="3D whale model"
+                        camera-controls
+                        style="width: 100%; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>Plankton Satellite</h3>
+                <p><em>"FedEx for your 5G internet"</em></p>
+                <p>The Plankton Satellite is a durable, multirole do-it-all satellite that can move short distances, has a camera, and can be a relay probe for your 5G internet across the solar system.</p>
+                <p style="margin-left: 5px; color: aliceblue;">It is quite compact and many can be deployed at once. Can be deployed by: SatCargo Orca, Cargo Orca, Satellite Dispenser Module.</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Fold up solar panel</li>
+                    <li>Advanced computers</li>
+                    <li>Ion engines</li>
+                    <li>Gyroscope for manuvering</li>
+                    <li>Cameras</li>
+                    <li>High power 5G antenna & dish</li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="satelliterotate.glb"
+                        alt="3D plankton model"
+                        camera-controls
+                        style="width: 100%; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+
+            <h2>Our Spacecraft (Modular)</h2>
+
+            <section class="craft">
+                <h3>Habitation Module</h3>
+                <p><em>"0 gravity living space"</em></p>
+                <p>Our habitation modlue for stations and generation ships are durable, inflateable living spaces for your orbital home.</p>
+                <p style="margin-left: 5px; color: aliceblue;">Compact when not inflated, it can be carried easily into space by the Cargo Orca.</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Small solar panels</li>
+                    <li>Advanced computer systems</li>
+                    <li>Manuvering thrusters</li>
+                    <li>100 psi capacity (bursts at 110)</li>
+                    <li>7 psi normal pressure</li>
+                    <li>Advanced life support</li>
+                    <li>Cameras</li>
+                    <li>Airlock</li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="fixedhab.glb"
+                        alt="3D habitation model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>Centrifuge Module</h3>
+                <p><em>"Gravity living space"</em></p>
+                <p>Spins so your astronauts can feel gravity in space</p>
+                <p style="margin-left: 5px; color: aliceblue;">Compact when not inflated, it can be carried easily into space by the Cargo Orca.</p>
+                <p>It extends and inflates the donut and starts spinning</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Small solar panels</li>
+                    <li>Advanced computer systems</li>
+                    <li>G R A V I T Y</li>
+                    <li>100 psi capacity (bursts at 110)</li>
+                    <li>7 psi normal pressure</li>
+                    <li>Advanced life support</li>
+                    <li>Gym</li>
+                    <li>Cameras</li>
+                    <li>Configurable for anything that needs gravity</li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model (one side is inflated one not)</h4>
+                    <model-viewer
+                        src="centrifuge.glb"
+                        alt="3D centrifuge model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>Command Module</h3>
+                <p><em>"The brain"</em></p>
+                <p>The command module is pretty much a must have for stations, with it's advanced computers to control the ship and communication dishes.</p>
+                <p style="margin-left: 5px; color: aliceblue;">It can be carried easily into space by the Cargo Orca.</p>
+                <p>It extends the comms dishes and antennae in space</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Small solar panels</li>
+                    <li>Advanced computer systems</li>
+                    <li>Advanced comms systems</li>
+                    <li>7 psi normal pressure</li>
+                    <li>Advanced life support</li>
+                    <li>Arlock</li>
+                    <li>Cameras</li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="command.glb"
+                        alt="3D command model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>Utility Module</h3>
+                <p><em>"The middle"</em></p>
+                <p>Must have for stations, has storage, manuvering thrusters, and most importantly, docking ports.</p>
+                <p style="margin-left: 5px; color: aliceblue;">It can be carried easily into space by the Cargo Orca.</p>
+                <p>It extends the comms dishes and antennae in space</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Small solar panels</li>
+                    <li>Advanced computer systems</li>
+                    <li>7 psi normal pressure</li>
+                    <li>Advanced life support</li>
+                    <li>Arlock</li>
+                    <li>Cameras</li>
+                    <li>docking ports</li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="utility.glb"
+                        alt="3D utility model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>truss Module</h3>
+                <p><em>"useful"</em></p>
+                <p>support truss. Has electrical lines, data lines, and fuel lines, as well as 8 utility docking ports for fuel tanks and solar panels.</p>
+                <p style="margin-left: 5px; color: aliceblue;">It can be carried easily into space by the Cargo Orca.</p>
+                <p>good for solar panels</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>manuvering thruster</li>
+                    <li>Fuel lines</li>
+                    <li>Electrical lines</li>
+                    <li>8 utility docking ports</li>
+                    <li>Cameras</li>
+                </ul>
+                <section style="grid-column: 1/2; display: block;">
+                    <h4>Variants:</h4>
+                    <dl>
+                        <dt>Simple</dt>
+                        <dd>has no docking ports</dd>
+
+                        <dt><span>ULTRA SLIM</span></dt>
+                        <dd>Has no docking ports or resource lines</dd>
+
+                        <dt>Satellite Module</dt>
+                        <dd>Has no docking ports, but has a lot of attached plankton. Spins up <em>really really fast</em> and detaches the plankton satellites and spreads them EVERYWHERE</dd>
+                    </dl>
+                </section>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="truss.glb"
+                        alt="3D truss model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+            <section class="craft">
+                <h3>gargantuan engine Module</h3>
+                <p><em>"this guy never missed leg day"</em></p>
+                <p>Go-to interstellar engine. extremely high thrust and extremely high efficiency. Can push ANY station ANYWHERE. W0rks insanely well with the warp drive.</p>
+                <p style="margin-left: 5px; color: aliceblue;">It can be carried <del>easily</del> into space by the Cargo Orca.</p>
+                <p>assembled in space</p>
+                <p style="grid-column: 1/2;">It has:</p>
+                <ul style="grid-column: 1/2;">
+                    <li>Pushing power like you wouldn't <strong>beleive</strong></li>
+                </ul>
+                <section style="padding: 0; grid-column: 2/3; grid-template-columns: 1fr;">
+                    <h4 style="position: absolute; margin: 5px;">Interactive 3D Model</h4>
+                    <model-viewer
+                        src="engine.glb"
+                        alt="3D engine model"
+                        camera-controls
+                        style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; display: block; padding: 0;">
+                    </model-viewer>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://atdpsites.berkeley.edu/validate/">Validate</a>
+        </footer>
+    </body>
+
+</html>

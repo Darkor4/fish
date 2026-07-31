@@ -1,0 +1,16 @@
+div #hole {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+#block4 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#block5 {
+    grid-column: -2/-3;
+    grid-row: 2/4;
+}
+#block6 {
+    grid-column: -3/-4;
+    grid-row: 3/5;
+}

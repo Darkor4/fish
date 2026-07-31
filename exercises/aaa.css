@@ -1,0 +1,12 @@
+body {
+background-image: repeating-linear-gradient(264deg, red 20px, yellow 30px);
+color: red;
+font-size: 50px;
+}
+main, header {
+background-image: repeating-linear-gradient(106deg, white 20px, black 30px);
+}
+footer a {
+background-color: black;
+color: gainsboro;
+}

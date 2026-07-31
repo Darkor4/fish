@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <title>Cool Form</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                color: crimson;
+                background-color: #0a0a0a;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+            input {
+                background-color: gainsboro;
+                border: 1px solid crimson;
+                border-radius: 0;
+                color: #0a0a0a;
+            }
+            input:focus, input:hover {
+                color: gainsboro;
+                background-color: crimson;
+                border-color: gainsboro;
+            }
+            button {
+                border: 1px solid crimson;
+                background-color: darkgrey;
+                color: crimson;
+                border-bottom: 2px solid red;
+            }
+            button:hover {
+                border: 5px solid crimson;
+                border-bottom: 10px solid red;
+            }
+            button:active {
+                border: 5px solid gainsboro;
+                background-color: crimson;
+                color: gainsboro;
+                border-bottom: 10px solid gray;
+            }
+        </style>
+    </head>
+
+    <body style="text-align: center;">
+        <header>
+            <h1>Cool Form</h1>
+            <p>Pls fill out</p>
+        </header>
+
+        <main>
+            <form action="https://atdp.berkeley.edu/forms/courses.php" method="get">
+                <p>
+                    <label for="year">Year:</label>
+                    <input  id="year" name="year" type="text" placeholder="1982&lt;#">
+                </p>
+                <p>
+                    <label>
+                        Division:
+                        <input type="checkbox" name="division" value="SD">SD
+                    </label>
+                    <label>
+                        Division:
+                        <input type="checkbox" name="division" value="ED">ED
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Units:
+                        <select name="units">
+                            <option value="0">0</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">SUBMIT DA FORM</button>
+                </p>
+            </form>
+        </main>
+
+        <footer>
+            <a href="https://atdpsites.berkeley.edu/validate/">Validate</a>
+        </footer>
+    </body>
+
+</html>
